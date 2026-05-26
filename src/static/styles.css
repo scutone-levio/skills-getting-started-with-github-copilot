@@ -59,19 +59,125 @@ section h3 {
 
 .activity-card {
   margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  padding: 16px;
+  border: 1px solid #d8def7;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #fcfdff 0%, #f2f5ff 100%);
+  box-shadow: 0 6px 16px rgba(26, 35, 126, 0.1);
 }
 
 .activity-card h4 {
-  margin-bottom: 10px;
+  margin-bottom: 0;
   color: #0066cc;
 }
 
-.activity-card p {
+.activity-card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.spots-badge {
+  white-space: nowrap;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  color: #1b5e20;
+  background-color: #e8f5e9;
+  border: 1px solid #a5d6a7;
+}
+
+.spots-badge.full {
+  color: #b71c1c;
+  background-color: #ffebee;
+  border-color: #ef9a9a;
+}
+
+.activity-description,
+.activity-meta {
+  margin-bottom: 10px;
+}
+
+.participants-section {
+  margin-top: 2px;
+  padding: 12px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #ffffff 0%, #eef2ff 100%);
+  border: 1px solid #d9e0ff;
+}
+
+.participants-heading {
   margin-bottom: 8px;
+  color: #243585;
+  letter-spacing: 0.2px;
+}
+
+.participants-list {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.participants-list-clean {
+  list-style: none;
+  padding-left: 0;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  border: 1px solid #e4e9ff;
+}
+
+.participant-email {
+  overflow-wrap: anywhere;
+}
+
+.participant-remove-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #ef9a9a;
+  background-color: #ffebee;
+  color: #b71c1c;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.participant-remove-btn:hover {
+  background-color: #ffcdd2;
+  border-color: #e57373;
+  transform: scale(1.06);
+}
+
+.participant-remove-btn:focus-visible {
+  outline: 2px solid #3949ab;
+  outline-offset: 2px;
+}
+
+.participants-list li {
+  margin-bottom: 6px;
+  color: #2a2a2a;
+}
+
+.participants-list li.no-participants {
+  list-style-type: circle;
+  color: #5c6b8a;
+  font-style: italic;
 }
 
 .form-group {
